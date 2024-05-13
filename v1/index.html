@@ -37,21 +37,69 @@
       </nav>
     </head>
     <main class="container">
-      <section class="my-5 col-md-6">
+      <section class="my-5 col-12 col-sm-6">
         <div class="d-flex align-items-center mb-3">
             <!-- Versión móvil -->
-            <img src="img/perfil.jpg" alt="Christian Tapia - ComikSama" class="img-fluid rounded-circle border border-success shadow-sm d-block d-md-none" style="width: 35%;">
+            <img src="img/perfil.jpg" alt="Christian Tapia - ComikSama" class="img-fluid rounded-circle border border-success shadow-sm d-block d-md-none" style="width: 30%;">
             <!-- Versión de escritorio -->
-            <img src="img/perfil.jpg" alt="Christian Tapia - ComikSama" class="img-fluid rounded-circle border border-success shadow-sm d-none d-md-block" style="width: 8%;">
+            <img src="img/perfil.jpg" alt="Christian Tapia - ComikSama" class="img-fluid rounded-circle border border-success shadow-sm d-none d-md-block" style="width: 10%;">
             <p class="ms-4 p-2 text-success border border-success border-3 rounded-4 fw-bold disponible" style="background-color: var(--bs-success-bg-subtle)">Disponible para trabajar</p>
         </div>
-        <h1 class="titulo">Hola, Soy Christian</h1>
-        <p>Diseñador Gráfico, Estudiante de Ingenieria en Informartica y Creador de Contenido sobre Papercraft en La Serena, Chile cl. Especializado en el desarrollo de páginas web ideales para tu negocio.</p>
+        <h1 class="txt-titulo">Hola, Soy Christian</h1>
+        <p class="txt-parrafo mt-4"><strong>Diseñador Gráfico, Estudiante de Ingenieria en Informartica y Creador de Contenido sobre Papercraft</strong> en La Serena, Chile cl. Especializado en el desarrollo de páginas web ideales para tu negocio.</p>
         
-      </section>
-
+      
+      <div class="d-grid gap-2 d-md-block">
+        <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-regular fa-envelope me-2"></i> Contáctame
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="mailto:christian.tapia.disenoyweb@gmail.com">Escribeme!!<i class="fa-solid fa-pen-to-square ms-5"></i></a></li>
+          <li>
+              <div class="dropdown-item" onclick="copyToClipboard('christian.tapia.disenoyweb@gmail.com')">
+                  <strong>Christian.tapia.disenoyweb@gmail.com</strong>
+                  <i class="fa-regular fa-clipboard ms-2"></i>
+              </div>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-phone me-2"></i> Llamame
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+              <a class="dropdown-item" href="tel:+56922084711">
+                  <img src="img/bandera-cl.svg" alt="bandera chile" style="width: 8%;" class="me-2">
+                  <strong>+56 9 2208 4711</strong>
+                  <i class="fa-solid fa-phone ms-3"></i>
+              </a>
+          </li>
+        </ul>
+        <a class="btn btn-outline-success" href="https://www.linkedin.com/in/christian-tapia-araya/" target="_blank">
+          <i class="fa-brands fa-linkedin me-2"></i> LinkedIn
+        </a>
+        <a class="btn btn-outline-success" href="https://github.com/ComikSama" target="_blank">
+          <i class="fa-brands fa-github me-2"></i> GitHub
+        </a>
+      
+      </div>
+    </section>
+    <section></section>
 
     </main>
+    <script>
+      //Copia de correo en el portapapeles
+      function copyToClipboard(text) {
+          var tempInput = document.createElement("input");
+          tempInput.value = text;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand("copy");
+          document.body.removeChild(tempInput);
+          alert("El correo electrónico se ha copiado al portapapeles: " + text);
+      }
+  </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
   </body>
 </html>

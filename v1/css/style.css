@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 .disponible {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
   }
-  .titulo {
-    font-family: "Poetsen One", sans-serif;
+  .txt-titulo{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
   }
+  .txt-parrafo{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40
+  }
   
+
+  @media (max-width: 768px){
+    .txt-titulo{
+        font-size: 35px;
+    }
+  }
