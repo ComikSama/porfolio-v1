@@ -3,27 +3,88 @@
 
 .disponible {
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
     font-style: normal;
-  }
-  .txt-titulo{
+    transition: font-size 0.3s ease;
+    font-size: 16px;
+}
+.disponible:hover {
+    font-size: 17px;
+}
+.txt-titulo{
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-  }
-  .txt-parrafo{
+}
+.txt-parrafo{
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 40
-  }
-  
+}
 
-  @media (max-width: 768px){
+.linea-vertical {
+    list-style: none;
+    padding: 0;
+}
+
+.linea-vertical li {
+    position: relative;
+    padding-left: 50px; /* Espacio para el punto de lista */
+}
+
+.linea-vertical li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px; /* Ancho de la línea vertical */
+    background-color: gray; /* Color de la línea vertical */
+    margin-left: 6px; /* Ajusta la posición de la línea */
+}
+
+.linea-vertical #titulo-1::after {
+    content: '';
+    position: absolute;
+    left: 0px; /* Ajusta la posición del punto de lista */
+    width: 15px; /* Tamaño del punto de lista */
+    height: 15px; /* Tamaño del punto de lista */
+    background-color: black; /* Color del punto de lista */
+    border-radius: 50%; /* Forma circular del punto de lista */
+    top: 5%;
+    transform: translateY(-50%); /* Centra verticalmente el punto de lista */
+}
+.linea-vertical #titulo-2::after {
+    content: '';
+    position: absolute;
+    left: 0px; /* Ajusta la posición del punto de lista */
+    width: 15px; /* Tamaño del punto de lista */
+    height: 15px; /* Tamaño del punto de lista */
+    background-color: black; /* Color del punto de lista */
+    border-radius: 50%; /* Forma circular del punto de lista */
+    top: 8%;
+    transform: translateY(-50%); /* Centra verticalmente el punto de lista */
+}
+.linea-vertical #titulo-3::after {
+    content: '';
+    position: absolute;
+    left: 0px; /* Ajusta la posición del punto de lista */
+    width: 15px; /* Tamaño del punto de lista */
+    height: 15px; /* Tamaño del punto de lista */
+    background-color: black; /* Color del punto de lista */
+    border-radius: 50%; /* Forma circular del punto de lista */
+    top: 8%;
+    transform: translateY(-50%); /* Centra verticalmente el punto de lista */
+}
+
+
+
+
+@media (max-width: 768px){
     .txt-titulo{
         font-size: 35px;
-    }
-  }
+}
+}
