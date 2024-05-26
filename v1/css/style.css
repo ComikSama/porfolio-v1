@@ -17,14 +17,44 @@
     font-style: normal;
     font-size: 60px;
 }
+.txt-titulo-2{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+.txt-titulo-3{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
 .txt-parrafo{
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 40
+    font-size: 20px;
 }
-
+.txt-parrafo-2{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.txt-parrafo-3{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+.txt-cod{
+    font-size: 20px;
+}
 .linea-vertical {
     list-style: none;
     padding: 0;
@@ -54,7 +84,7 @@
     height: 15px; /* Tamaño del punto de lista */
     background-color: black; /* Color del punto de lista */
     border-radius: 50%; /* Forma circular del punto de lista */
-    top: 5%;
+    top: 25%;
     transform: translateY(-50%); /* Centra verticalmente el punto de lista */
 }
 .linea-vertical #titulo-2::after {
@@ -68,18 +98,6 @@
     top: 8%;
     transform: translateY(-50%); /* Centra verticalmente el punto de lista */
 }
-.linea-vertical #titulo-3::after {
-    content: '';
-    position: absolute;
-    left: 0px; /* Ajusta la posición del punto de lista */
-    width: 15px; /* Tamaño del punto de lista */
-    height: 15px; /* Tamaño del punto de lista */
-    background-color: black; /* Color del punto de lista */
-    border-radius: 50%; /* Forma circular del punto de lista */
-    top: 8%;
-    transform: translateY(-50%); /* Centra verticalmente el punto de lista */
-}
-
 
 
 
