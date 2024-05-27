@@ -38,6 +38,13 @@
     font-style: normal;
     font-size: 20px;
 }
+.txt-parrafo-1{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
 .txt-parrafo-2{
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
@@ -98,11 +105,32 @@
     top: 8%;
     transform: translateY(-50%); /* Centra verticalmente el punto de lista */
 }
+footer{
+    font-size: 15px;
+}
 
 
 
 @media (max-width: 768px){
     .txt-titulo{
         font-size: 35px;
-}
+    }
+    .txt-titulo-2{
+        font-size: 24px;
+    }
+    .linea-vertical #titulo-1::after{
+        top: 8%;
+    }
+    .linea-vertical #titulo-2::after{
+        top: 3%;
+    }
+    .txt-parrafo-1{
+        font-size: 16px;
+    }
+    .txt-titulo-3{
+        font-size: 20px;
+    }
+    #logos{
+        font-size: 15px;
+    }
 }

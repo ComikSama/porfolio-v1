@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
-  <body>
+  <body class="bg-black">
     <head class="">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid ">
@@ -36,7 +36,7 @@
         </div>
       </nav>
     </head>
-    <main class="container px-5">
+    <main class="container px-5 bg-white py-5">
       <section class="my-5 col-12 col-sm-6">
         <div class="d-flex align-items-center mb-3">
             <!-- Versión móvil -->
@@ -68,7 +68,7 @@
         <ul class="dropdown-menu">
           <li>
             <li><a class="dropdown-item" href="tel:+56922084711">Llamame!! <i class="fa-solid fa-phone ms-5"></i></a></li>
-              <div class="dropdown-item" onclick="copyToClipboard('+56922084711')">
+              <div class="dropdown-item" onclick="copyToPhoneClipboard('+56922084711')">
                   <img src="img/bandera-cl.svg" alt="bandera chile" style="width: 5%;" class="me-2 border border-black rounded-5">
                   <strong>+56 9 2208 4711</strong>
                   <i class="fa-regular fa-clipboard ms-2"></i>
@@ -84,17 +84,17 @@
       
       </div>
     </section>
-    <section class="mb-5">
+    <section class="my-5 pt-5">
       <p class="txt-titulo-2"><i class="fa-solid fa-briefcase me-2"></i> Experiencia Laboral</p>
       <ul class="linea-vertical">
         <li class="pb-4">
           <div class="row">
-            <div class="col-6 col-sm-4">
+            <div class="col-12 col-sm-4">
               <p class="my-0 py-0 txt-parrafo text-success fw-bold" id="titulo-1">Diseñador Gráfico y Front-End Dev</p>
               <p class="fw-bold txt-parrafo-2">Arancio Publicidad - La Serena</p>
               <p class="txt-parrafo-3">2022 - Actualmente</p>
             </div>
-            <div class="col-6 col-sm-8 txt-parrafo">
+            <div class="col-12 col-sm-8 txt-parrafo-1">
               <p class="mb-0">Diseño de Marca y Producción para empresas Nacionales e Internacional.</p>
               <p class="mt-0">Diseño Web y Programación para Empresas y Pymes locales.</p>
             </div>
@@ -102,12 +102,12 @@
         </li>
         <li class="pb-4">
           <div class="row">
-            <div class="col-6 col-sm-4">
+            <div class="col-12 col-sm-4">
               <p class="my-0 py-0 txt-parrafo text-success fw-bold" id="titulo-2">Diseño y Producción Gráfica</p>
               <p class="fw-bold txt-parrafo-2">GráficaG - La Serena</p>
               <p class="txt-parrafo-3">2018 - 2022</p>
             </div>
-            <div class="col-6 col-sm-8 txt-parrafo">
+            <div class="col-12 col-sm-8 txt-parrafo-1" >
               <p class="fw-bold mb-0">Diseño</p>
               <p class="mb-0 ms-3">Imange de Marca.</p>
               <p class="mt-0 mb-0 ms-3">Logotipos e Isotipos de Micro y Mediana Empresa.</p>
@@ -127,7 +127,7 @@
         </li>
     </ul>
     </section>
-    <section>
+    <section class="my-5 pt-5">
       <p class="txt-titulo-2"><i class="fa-solid fa-laptop-code me-2"></i> Proyectos y Trabajos</p>
       <div class="row d-flex align-items-center">
         <div class="col-md-5">
@@ -135,24 +135,27 @@
         </div>
         <div class="col-md-7 px-5 ">
           <p class="txt-titulo-3 mt-0 pt-0">Pagina Web - Arancio Publicidad</p>
-          <div class="row align-items-center text-center justify-content-center gx-1 gy-2">
-            <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 rounded-5 fw-bold">
-                <i class="fa-brands fa-html5" style="color: #ff0000;"></i> HTML5
+          <div class="row align-items-center text-center justify-content-center justify-content-sm-start gx-2 gy-2" id="logos">
+            <div class="col-6 col-sm-2 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-html5 me-1" style="color: #ff0000;"></i> HTML5
             </div>
-            <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2  ms-1 rounded-5 fw-bold">
-                <i class="fa-brands fa-css3-alt" style="color: #004bcc;"></i> CSS3
+            <div class="col-6 col-sm-2 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-css3-alt pe-1" style="color: #004bcc;"></i> CSS3
             </div>
-            <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 ms-1 rounded-5 fw-bold">
-                <i class="fa-brands fa-js" style="color: #FFD43B;"></i> JavaScript
+            <div class="col-6 col-sm-3 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-js me-1" style="color: #FFD43B;"></i> JavaScript
             </div>
-            <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 ms-1 rounded-5 fw-bold">
-                <i class="fa-solid fa-database"></i> MySql
+            <div class="col-6 col-sm-2 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-php me-1"></i> PHP
             </div>
-            <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 ms-1 rounded-5 fw-bold">
-                <i class="fa-brands fa-bootstrap" style="color: #7e5ce6;"></i> Bootstrap
+            <div class="col-6 col-sm-2 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-solid fa-database me-1"></i> MySql
+            </div>
+            <div class="col-6 col-sm-3 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-bootstrap me-1" style="color: #7e5ce6;"></i> Bootstrap
             </div>
           </div>
-          <p class="txt-parrafo mt-4">Pagina Web principal creada para la Agencia Publicitaria <strong>Arancio Publicidad</strong>, en donde da a conocer sus productos, con galeria de fotos y lista de productos dando la opción de hacer cotizaciones.</p>
+          <p class="txt-parrafo-1 mt-4">Pagina Web principal creada para la Agencia Publicitaria <strong>Arancio Publicidad</strong>, en donde da a conocer sus productos, con galería de fotos y lista de productos dando la opción de hacer cotizaciones.</p>
           <div class="d-flex txt-cod">
             <!-- <div class="bg-black  py-3 px-4 rounded-4 fw-bold">
               <a href="" class="text-decoration-none text-white" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -169,24 +172,27 @@
         </div>
         <div class="col-md-7 px-5 ">
           <p class="txt-titulo-3 mt-0 pt-0">Pagina Web - Arancio Publicidad / CotizaFacil</p>
-          <div class="row align-items-center text-center justify-content-center gx-1 gy-2">
-            <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 rounded-5 fw-bold">
-                <i class="fa-brands fa-html5" style="color: #ff0000;"></i> HTML5
+          <div class="row align-items-center text-center justify-content-center justify-content-sm-start gx-2 gy-2" id="logos">
+            <div class="col-6 col-sm-2 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-html5 me-1" style="color: #ff0000;"></i> HTML5
             </div>
-            <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2  ms-1 rounded-5 fw-bold">
-                <i class="fa-brands fa-css3-alt" style="color: #004bcc;"></i> CSS3
+            <div class="col-6 col-sm-2 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-css3-alt pe-1" style="color: #004bcc;"></i> CSS3
             </div>
-            <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 ms-1 rounded-5 fw-bold">
-                <i class="fa-brands fa-js" style="color: #FFD43B;"></i> JavaScript
+            <div class="col-6 col-sm-3 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-js me-1" style="color: #FFD43B;"></i> JavaScript
             </div>
-            <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 ms-1 rounded-5 fw-bold">
-                <i class="fa-solid fa-database"></i> MySql
+            <div class="col-6 col-sm-2 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-php me-1"></i> PHP
             </div>
-            <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 ms-1 rounded-5 fw-bold">
-                <i class="fa-brands fa-bootstrap" style="color: #7e5ce6;"></i> Bootstrap
+            <div class="col-6 col-sm-2 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-solid fa-database me-1"></i> MySql
+            </div>
+            <div class="col-6 col-sm-3 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-bootstrap me-1" style="color: #7e5ce6;"></i> Bootstrap
             </div>
           </div>
-          <p class="txt-parrafo mt-4">Pagina Web de cotizaciones para la Agencia Publicitaria <strong>Arancio Publicidad</strong>, siendo dinamica al seleccionar la cantidad de productos y materialidad, dando en tiempo real el precio total de los productos selecionados.</p>
+          <p class="txt-parrafo-1 mt-4">Pagina Web de cotizaciones para la Agencia Publicitaria <strong>Arancio Publicidad</strong>, siendo dinámica al seleccionar la cantidad de productos y materialidad, dando en tiempo real el precio total de los productos seleccionados.</p>
           <div class="d-flex txt-cod">
             <!-- <div class="bg-black  py-3 px-4 rounded-4 fw-bold">
               <a href="" class="text-decoration-none text-white" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -196,32 +202,34 @@
             </div>
           </div>
         </div>
-        
       </div>
       <div class="row d-flex align-items-center mt-5">
         <div class="col-md-5">
           <img src="img/proyectos/arancio/003.jpg" class="img-fluid rounded-2" alt="img-arancio">
         </div>
         <div class="col-md-7 px-5">
-          <p class="txt-titulo-3 mt-0 pt-0">Pagina Web - </p>
-          <div class="row align-items-center text-center justify-content-center gx-1 gy-2">
-              <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 rounded-5 fw-bold">
-                  <i class="fa-brands fa-html5" style="color: #ff0000;"></i> HTML5
-              </div>
-              <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2  ms-1 rounded-5 fw-bold">
-                  <i class="fa-brands fa-css3-alt" style="color: #004bcc;"></i> CSS3
-              </div>
-              <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 ms-1 rounded-5 fw-bold">
-                  <i class="fa-brands fa-js" style="color: #FFD43B;"></i> JavaScript
-              </div>
-              <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 ms-1 rounded-5 fw-bold">
-                  <i class="fa-solid fa-database"></i> MySql
-              </div>
-              <div class="col-6 col-sm-4 col-md bg-black text-white py-1 px-2 ms-1 rounded-5 fw-bold">
-                  <i class="fa-brands fa-bootstrap" style="color: #7e5ce6;"></i> Bootstrap
-              </div>
+          <p class="txt-titulo-3 mt-0 pt-0">Pagina Web - Inmobiliaria</p>
+          <div class="row align-items-center text-center justify-content-center justify-content-sm-start gx-2 gy-2" id="logos">
+            <div class="col-6 col-sm-2 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-html5 me-1" style="color: #ff0000;"></i> HTML5
+            </div>
+            <div class="col-6 col-sm-2 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-css3-alt pe-1" style="color: #004bcc;"></i> CSS3
+            </div>
+            <div class="col-6 col-sm-3 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-js me-1" style="color: #FFD43B;"></i> JavaScript
+            </div>
+            <div class="col-6 col-sm-2 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-php me-1"></i> PHP
+            </div>
+            <div class="col-6 col-sm-2 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-solid fa-database me-1"></i> MySql
+            </div>
+            <div class="col-6 col-sm-3 ms-sm-1 bg-black text-white py-1 px-2 rounded-5 fw-bold">
+                <i class="fa-brands fa-bootstrap me-1" style="color: #7e5ce6;"></i> Bootstrap
+            </div>
           </div>
-          <p class="txt-parrafo mt-4">Pagina Web de cotizaciones para la Agencia Publicitaria <strong>Arancio Publicidad</strong>, siendo dinamica al seleccionar la cantidad de productos y materialidad, dando en tiempo real el precio total de los productos selecionados.</p>
+          <p class="txt-parrafo-1 mt-4">Pagina Web para una Inmobiliaria, la cual está echa con autoadministración para crear usuarios o corredores de propiedades, agregar propiedades con variadas opciones, al igual que la eliminación y modificación de ellos.</p>
           <div class="d-flex txt-cod">
               <div class="bg-black py-3 px-4 rounded-4 fw-bold">
                   <a href="https://inmobiliariaweb2024.000webhostapp.com/" class="text-decoration-none text-white" target="_blank">
@@ -229,13 +237,30 @@
                   </a>
               </div>
           </div>
-      </div>
-      
-        
+      </div>       
       </div>
     </section>
-
+    <section class="my-5 pt-5">
+      <p class="txt-titulo-2"><i class="fa-solid fa-user-tag me-2"></i> Sobre mí</p>
+      <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4"></div>
+      </div>
+    </section>
     </main>
+    <footer class="bg-body-tertiary">
+      <div class="container opacity-75 pt-3">
+        <div class="row">
+          <div class="col-12 col-md-6 text-start">
+            <p>© <span id="currentYear"></span> <a href="https://www.linkedin.com/in/christian-tapia-araya/" class="text-decoration-none text-black">ComikSama.</a> Todos los derechos reservados.</p>
+          </div>
+          <div class="col-12 col-md-6 text-end">
+            <a href="" class="text-decoration-none text-black me-5">Sobre Mí</a>
+            <a href="mailto:christian.tapia.disenoyweb@gmail.com" class="text-decoration-none text-black" >Contacto</a>
+          </div>  
+        </div>
+      </div>
+    </footer>
     <script>
       //Copia de correo en el portapapeles
       function copyToClipboard(text) {
@@ -247,7 +272,21 @@
           document.body.removeChild(tempInput);
           alert("El correo electrónico se ha copiado al portapapeles: " + text);
       }
-  </script>
+      //Copia del telefono en el portapapeles
+      function copyToPhoneClipboard(text) {
+          var tempInput = document.createElement("input");
+          tempInput.value = text;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand("copy");
+          document.body.removeChild(tempInput);
+          alert("El Télefono se ha copiado al portapapeles: " + text);
+      }
+    </script>
+    <script>
+      const currentYear = new Date().getFullYear();
+      document.getElementById('currentYear').textContent = currentYear;
+    </script>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
