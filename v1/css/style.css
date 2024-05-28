@@ -59,6 +59,13 @@
     font-style: normal;
     font-size: 15px;
 }
+.txt-parrafo-4{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
 .txt-cod{
     font-size: 20px;
 }
@@ -105,11 +112,15 @@
     top: 8%;
     transform: translateY(-50%); /* Centra verticalmente el punto de lista */
 }
+.custom-border {
+    padding: 10px; /* Espacio entre la imagen y el borde */
+    background-color: white; /* Color de fondo dentro del borde */
+    border-radius: 15px; /* Esquinas redondeadas del borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle un efecto de profundidad */
+}
 footer{
     font-size: 15px;
 }
-
-
 
 @media (max-width: 768px){
     .txt-titulo{
