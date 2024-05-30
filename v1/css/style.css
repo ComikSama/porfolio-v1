@@ -73,12 +73,10 @@
     list-style: none;
     padding: 0;
 }
-
 .linea-vertical li {
     position: relative;
     padding-left: 50px; /* Espacio para el punto de lista */
 }
-
 .linea-vertical li::before {
     content: '';
     position: absolute;
@@ -89,7 +87,6 @@
     background-color: gray; /* Color de la línea vertical */
     margin-left: 6px; /* Ajusta la posición de la línea */
 }
-
 .linea-vertical #titulo-1::after {
     content: '';
     position: absolute;
@@ -118,6 +115,9 @@
     border-radius: 15px; /* Esquinas redondeadas del borde */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle un efecto de profundidad */
 }
+.icon{
+    width: 28%;
+}
 footer{
     font-size: 15px;
 }
@@ -143,5 +143,8 @@ footer{
     }
     #logos{
         font-size: 15px;
+    }
+    .icon{
+        width: 46%;
     }
 }
